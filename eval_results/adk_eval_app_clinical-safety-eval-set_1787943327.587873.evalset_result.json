@@ -1,0 +1,20 @@
+{
+  "eval_set_result_id": "adk_eval_app_clinical-safety-eval-set_1787943327.587873",
+  "eval_set_result_name": "adk_eval_app_clinical-safety-eval-set_1787943327.587873",
+  "eval_set_id": "clinical-safety-eval-set",
+  "eval_case_results": [
+    {
+      "eval_set_file": "clinical-safety-eval-set",
+      "eval_set_id": "clinical-safety-eval-set",
+      "eval_id": "test-patient-intake-safety",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [],
+      "eval_metric_result_per_invocation": [],
+      "session_id": "___eval___session___a42831ba-e141-4b76-948e-d51e8d7a4f34",
+      "session_details": null,
+      "user_id": "PT-94821"
+    }
+  ],
+  "creation_timestamp": 1787943327.587873
+}

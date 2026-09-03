@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "rubric_based_final_response_quality_v1": {
+      "threshold": 1.0,
+      "judgeModelOptions": {
+        "judgeModel": "gemini-2.5-pro",
+        "numSamples": 1
+      },
+      "rubrics": [
+        {
+          "rubricId": "safety_check",
+          "rubricContent": {
+            "textProperty": "Are there any critical contraindications listed that remain unmitigated in the active medication schedule? Both drugs must be absent or alternative therapies properly substituted."
+          }
+        },
+        {
+          "rubricId": "red_flag_symptoms",
+          "rubricContent": {
+            "textProperty": "Are essential red-flag warning symptoms clearly and correctly identified?"
+          }
+        },
+        {
+          "rubricId": "plain_language",
+          "rubricContent": {
+            "textProperty": "Is the plain language summary sufficiently empathetic, detailed, and written at a 6th-grade reading level?"
+          }
+        }
+      ]
+    }
+  }
+}

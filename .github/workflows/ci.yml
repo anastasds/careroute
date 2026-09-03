@@ -1,0 +1,41 @@
+name: CareRoute CI/CD & AgentOps Evaluation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-and-evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v2
+        with:
+          enable-cache: true
+
+      - name: Install Dependencies
+        run: |
+          uv pip install --system -r requirements.txt
+
+      - name: Run Unit Tests (Tools, Memory, Guardrails, Observability, APIs)
+        run: |
+          pytest --verbose tests/
+
+      - name: Run Golden Dataset & LLM-as-a-Judge Evaluation Suite
+        run: |
+          pytest --verbose evals/
+
+      - name: Verify Secret Hygiene & Linting
+        run: |
+          # Ensure no hardcoded API keys exist in source
+          ! grep -r "AIzaSy" careroute/ tests/ evals/

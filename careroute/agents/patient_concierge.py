@@ -1,0 +1,28 @@
+from careroute.core.adk_config import create_safe_model
+"""Patient Concierge Agent (Gemini Flash) for CareRoute.
+
+Translates clinical discharge plans into personalized, empathetic, 6th-grade reading level
+patient recovery guides, incorporating per-user behavioral memory (e.g., forgetfulness habits).
+"""
+
+from typing import Any
+from google.adk.agents import Agent
+from careroute.core.constitution import PATIENT_CONCIERGE_SYSTEM_PROMPT
+from careroute.core.models import PersonalizedCarePlan
+from careroute.core.router import TaskComplexity, router
+from careroute.memory.personalization import personalization_memory
+
+
+def get_patient_profile(patient_id: str) -> str:
+    """Retrieve the behavioral profile of the patient."""
+    return personalization_memory.get_profile(patient_id).model_dump_json()
+
+
+concierge_agent = Agent(
+        name="PatientConciergeAgent",
+    instruction=PATIENT_CONCIERGE_SYSTEM_PROMPT,
+    model=create_safe_model(router.select_model_for_task(TaskComplexity.TEXT_SIMPLIFICATION)),
+    tools=[get_patient_profile],
+    mode="task",
+    output_schema=PersonalizedCarePlan
+)

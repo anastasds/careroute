@@ -1,0 +1,4 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-f', 'eval.Dockerfile', '-t', 'gcr.io/$PROJECT_ID/careroute-eval', '.']
+images: ['gcr.io/$PROJECT_ID/careroute-eval']

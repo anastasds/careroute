@@ -1,0 +1,1395 @@
+[
+  {
+    "insertId": "6a98daf20009ed41bb868877",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.684673450Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "2026/09/03 02:26:58.649730 [ktd watcher] KTD agent process failed: exit status 1",
+    "timestamp": "2026-09-03T02:26:58.650561Z"
+  },
+  {
+    "insertId": "6a98daf20009ec16120faaf1",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.684673450Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "2026/09/03 02:26:58.649517 [ktd watcher] markExited recorded error: exit status 1",
+    "timestamp": "2026-09-03T02:26:58.650262Z"
+  },
+  {
+    "insertId": "6a98daf20009ccd078aba033",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.684673450Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "F0903 02:26:58.641241       1 watcher.go:273] Fatal error: caught signal: terminated",
+    "timestamp": "2026-09-03T02:26:58.642256Z"
+  },
+  {
+    "insertId": "6a98daf20009cbe27e446911",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.684673450Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:58.640786       1 watcher.go:703] One watcher thread went down, stopping: caught signal: terminated",
+    "timestamp": "2026-09-03T02:26:58.642018Z"
+  },
+  {
+    "insertId": "6a98daf20009cbdd3694f1c5",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.684673450Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:58.640766      70 saferun.go:47] goroutine signal.reload exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:58.642013Z"
+  },
+  {
+    "insertId": "6a98daf20009cad50b55b9f0",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.684673450Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "2026/09/03 02:26:58 Loading config defined in CONTAINER_WATCHER_CONFIG_PATH as /tmp/container-watcher/config.pb",
+    "timestamp": "2026-09-03T02:26:58.641749Z"
+  },
+  {
+    "insertId": "6a98daf20009cacf2f8fef91",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.684673450Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:26:58.640605      70 watcher.go:651] Reloading Cloud Run config.",
+    "timestamp": "2026-09-03T02:26:58.641743Z"
+  },
+  {
+    "insertId": "6a98daf20001812e6fe2087a",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.348645421Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:58.097520      68 saferun.go:47] goroutine eventwatchers.Run exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:58.098606Z"
+  },
+  {
+    "insertId": "6a98daf1000bbe819db98a15",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.768525      58 saferun.go:47] goroutine ktd.ebpf.krsi.eventloop exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.769665Z"
+  },
+  {
+    "insertId": "6a98daf1000a5988db2a66e7",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.677325      13 saferun.go:47] goroutine ktd.Run exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.678280Z"
+  },
+  {
+    "insertId": "6a98daf1000a59845f3a20f3",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:26:57.677220      13 krsieventreader.go:301] update probe enablement status (exec: false; mmap: false; exit: false; fork: false)",
+    "timestamp": "2026-09-03T02:26:57.678276Z"
+  },
+  {
+    "insertId": "6a98daf1000a59805877c2b7",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:26:57.677189      13 ktdclient.go:966] Disabling Collectors",
+    "timestamp": "2026-09-03T02:26:57.678272Z"
+  },
+  {
+    "insertId": "6a98daf1000a58750ca100c7",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.677142      13 ktdclient.go:337] ktdclient connection closed unexpectedly: ktdclient receive response failed: rpc error: code = Canceled desc = context canceled",
+    "timestamp": "2026-09-03T02:26:57.678005Z"
+  },
+  {
+    "insertId": "6a98daf1000a52c250b6875b",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.675464      57 saferun.go:47] goroutine ktd.ebpf.krsi.flushloop exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.676546Z"
+  },
+  {
+    "insertId": "6a98daf1000a52bf517b8513",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.675348      54 saferun.go:47] goroutine se.Run exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.676543Z"
+  },
+  {
+    "insertId": "6a98daf1000a52b9a77e02b0",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.675338      55 saferun.go:47] goroutine pe.Run exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.676537Z"
+  },
+  {
+    "insertId": "6a98daf1000a52b638e799ce",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.675280      56 saferun.go:47] goroutine fHasher.Run exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.676534Z"
+  },
+  {
+    "insertId": "6a98daf1000a52b40cec37a6",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.675235      71 saferun.go:47] goroutine signal.chld exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.676532Z"
+  },
+  {
+    "insertId": "6a98daf1000a52b1ef431908",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.675221      69 saferun.go:47] goroutine ktd.Configured exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.676529Z"
+  },
+  {
+    "insertId": "6a98daf1000a52acc95075a4",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:58.015424714Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "W0903 02:26:57.675182      59 saferun.go:47] goroutine ktd.ebpf.krsi.counters exited because context is cancelled.",
+    "timestamp": "2026-09-03T02:26:57.676524Z"
+  },
+  {
+    "insertId": "6a98daf1000a51ad06459298",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:26:57.682244430Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "E0903 02:26:57.675119      35 saferun.go:45] goroutine signal.exit exited with error: caught signal: terminated.",
+    "timestamp": "2026-09-03T02:26:57.676269Z"
+  },
+  {
+    "insertId": "6a98daf00001f15a3035d4ef",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:26:56.365780316Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Finished server process [1]",
+    "timestamp": "2026-09-03T02:26:56.127322Z"
+  },
+  {
+    "insertId": "6a98daf00001f0b18cf3c281",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:26:56.365780316Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Application shutdown complete.",
+    "timestamp": "2026-09-03T02:26:56.127153Z"
+  },
+  {
+    "insertId": "6a98daf00001efca35410705",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:26:56.365780316Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Waiting for application shutdown.",
+    "timestamp": "2026-09-03T02:26:56.126922Z"
+  },
+  {
+    "insertId": "6a98daf000006564ab76e91f",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:26:56.032333396Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Shutting down",
+    "timestamp": "2026-09-03T02:26:56.025956Z"
+  },
+  {
+    "insertId": "p01fcodrqny",
+    "logName": "projects/anastas001-sandbox-943746/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/anastas001-sandbox-943746/services/careroute-agent",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Service",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Service",
+        "metadata": {
+          "annotations": {
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "581.0.0",
+            "run.googleapis.com/ingress": "internal-and-cloud-load-balancing",
+            "run.googleapis.com/ingress-status": "internal-and-cloud-load-balancing",
+            "run.googleapis.com/maxScale": "100",
+            "run.googleapis.com/operation-id": "4bf22063-8950-41ad-a9ed-989fb3d33ed9",
+            "run.googleapis.com/threat-detection": "true",
+            "run.googleapis.com/urls": "[\"https://careroute-agent-113972856916.us-central1.run.app\",\"https://careroute-agent-qrle5h77ua-uc.a.run.app\"]",
+            "serving.knative.dev/creator": "anastasds@google.com",
+            "serving.knative.dev/lastModifier": "anastasds@google.com"
+          },
+          "creationTimestamp": "2026-08-27T18:56:31.394668Z",
+          "generation": 5,
+          "labels": {
+            "cloud.googleapis.com/location": "us-central1"
+          },
+          "name": "careroute-agent",
+          "namespace": "113972856916",
+          "resourceVersion": "AAZaiq0MA6k",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/113972856916/services/careroute-agent",
+          "uid": "c6e3d88b-1903-4ebf-8f0e-00cdd1ad6377"
+        },
+        "spec": {
+          "template": {
+            "metadata": {
+              "annotations": {
+                "autoscaling.knative.dev/maxScale": "100",
+                "run.googleapis.com/client-name": "gcloud",
+                "run.googleapis.com/client-version": "581.0.0",
+                "run.googleapis.com/startup-cpu-boost": "true"
+              },
+              "labels": {
+                "client.knative.dev/nonce": "ndnzednpwp",
+                "run.googleapis.com/startupProbeType": "Default"
+              }
+            },
+            "spec": {
+              "containerConcurrency": 160,
+              "containers": [
+                {
+                  "env": [
+                    {
+                      "name": "GCP_PROJECT_ID",
+                      "value": "anastas001-sandbox-943746"
+                    },
+                    {
+                      "name": "CAREROUTE_STORAGE_BACKEND",
+                      "value": "firestore"
+                    },
+                    {
+                      "name": "FIRESTORE_DATABASE_ID",
+                      "value": "(default)"
+                    },
+                    {
+                      "name": "GCP_SECRET_NAME",
+                      "value": "careroute-gemini-api-key"
+                    },
+                    {
+                      "name": "OTEL_SERVICE_NAME",
+                      "value": "careroute-cloudrun"
+                    },
+                    {
+                      "name": "ENABLE_CLOUD_TRACE",
+                      "value": "true"
+                    },
+                    {
+                      "name": "CAREROUTE_PRO_MODEL",
+                      "value": "gemini-3.1-pro-preview"
+                    },
+                    {
+                      "name": "CAREROUTE_FLASH_MODEL",
+                      "value": "gemini-3.5-flash"
+                    }
+                  ],
+                  "image": "gcr.io/anastas001-sandbox-943746/careroute-agent:latest",
+                  "ports": [
+                    {
+                      "containerPort": 8080,
+                      "name": "http1"
+                    }
+                  ],
+                  "resources": {
+                    "limits": {
+                      "cpu": "2",
+                      "memory": "2Gi"
+                    }
+                  },
+                  "startupProbe": {
+                    "failureThreshold": 1,
+                    "periodSeconds": 240,
+                    "tcpSocket": {
+                      "port": 8080
+                    },
+                    "timeoutSeconds": 240
+                  }
+                }
+              ],
+              "serviceAccountName": "113972856916-compute@developer.gserviceaccount.com",
+              "timeoutSeconds": 300
+            }
+          },
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100
+            }
+          ]
+        },
+        "status": {
+          "address": {
+            "url": "https://careroute-agent-qrle5h77ua-uc.a.run.app"
+          },
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-09-03T02:11:55.496361Z",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-09-03T02:11:02.341324Z",
+              "status": "True",
+              "type": "ConfigurationsReady"
+            },
+            {
+              "lastTransitionTime": "2026-09-03T02:11:55.450769Z",
+              "status": "True",
+              "type": "RoutesReady"
+            }
+          ],
+          "latestCreatedRevisionName": "careroute-agent-00005-hvn",
+          "latestReadyRevisionName": "careroute-agent-00005-hvn",
+          "observedGeneration": 5,
+          "traffic": [
+            {
+              "latestRevision": true,
+              "percent": 100,
+              "revisionName": "careroute-agent-00005-hvn"
+            }
+          ],
+          "url": "https://careroute-agent-qrle5h77ua-uc.a.run.app"
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Service careroute-agent."
+      }
+    },
+    "receiveTimestamp": "2026-09-03T02:11:56.330327881Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-09-03T02:11:55.514645Z"
+  },
+  {
+    "insertId": "aashjwd30ma",
+    "logName": "projects/anastas001-sandbox-943746/logs/cloudaudit.googleapis.com%2Fsystem_event",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "methodName": "/Services.ReplaceService",
+      "resourceName": "namespaces/anastas001-sandbox-943746/revisions/careroute-agent-00005-hvn",
+      "response": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.Revision",
+        "apiVersion": "serving.knative.dev/v1",
+        "kind": "Revision",
+        "metadata": {
+          "annotations": {
+            "autoscaling.knative.dev/maxScale": "100",
+            "run.googleapis.com/client-name": "gcloud",
+            "run.googleapis.com/client-version": "581.0.0",
+            "run.googleapis.com/execution-environment": "gen2",
+            "run.googleapis.com/operation-id": "4bf22063-8950-41ad-a9ed-989fb3d33ed9",
+            "run.googleapis.com/startup-cpu-boost": "true",
+            "run.googleapis.com/threat-detection": "true",
+            "serving.knative.dev/creator": "anastasds@google.com"
+          },
+          "creationTimestamp": "2026-09-03T02:10:53.412906Z",
+          "generation": 1,
+          "labels": {
+            "client.knative.dev/nonce": "ndnzednpwp",
+            "cloud.googleapis.com/location": "us-central1",
+            "run.googleapis.com/startupProbeType": "Default",
+            "serving.knative.dev/configuration": "careroute-agent",
+            "serving.knative.dev/configurationGeneration": "5",
+            "serving.knative.dev/route": "careroute-agent",
+            "serving.knative.dev/service": "careroute-agent",
+            "serving.knative.dev/serviceUid": "c6e3d88b-1903-4ebf-8f0e-00cdd1ad6377"
+          },
+          "name": "careroute-agent-00005-hvn",
+          "namespace": "113972856916",
+          "ownerReferences": [
+            {
+              "apiVersion": "serving.knative.dev/v1",
+              "blockOwnerDeletion": true,
+              "controller": true,
+              "kind": "Configuration",
+              "name": "careroute-agent",
+              "uid": "55395a30-a367-46bf-a398-e30b26a57dc7"
+            }
+          ],
+          "resourceVersion": "AAZaiqz232k",
+          "selfLink": "/apis/serving.knative.dev/v1/namespaces/113972856916/revisions/careroute-agent-00005-hvn",
+          "uid": "77d1f271-a0a3-4ad8-bcfc-2a2a9d85454f"
+        },
+        "spec": {
+          "containerConcurrency": 160,
+          "containers": [
+            {
+              "env": [
+                {
+                  "name": "GCP_PROJECT_ID",
+                  "value": "anastas001-sandbox-943746"
+                },
+                {
+                  "name": "CAREROUTE_STORAGE_BACKEND",
+                  "value": "firestore"
+                },
+                {
+                  "name": "FIRESTORE_DATABASE_ID",
+                  "value": "(default)"
+                },
+                {
+                  "name": "GCP_SECRET_NAME",
+                  "value": "careroute-gemini-api-key"
+                },
+                {
+                  "name": "OTEL_SERVICE_NAME",
+                  "value": "careroute-cloudrun"
+                },
+                {
+                  "name": "ENABLE_CLOUD_TRACE",
+                  "value": "true"
+                },
+                {
+                  "name": "CAREROUTE_PRO_MODEL",
+                  "value": "gemini-3.1-pro-preview"
+                },
+                {
+                  "name": "CAREROUTE_FLASH_MODEL",
+                  "value": "gemini-3.5-flash"
+                }
+              ],
+              "image": "gcr.io/anastas001-sandbox-943746/careroute-agent@sha256:48c743d5adb665a5ec5482c3aaa29c82ae41644842a96accc74d99eba438fafb",
+              "name": "careroute-agent-1",
+              "ports": [
+                {
+                  "containerPort": 8080,
+                  "name": "http1"
+                }
+              ],
+              "resources": {
+                "limits": {
+                  "cpu": "2",
+                  "memory": "2Gi"
+                }
+              },
+              "startupProbe": {
+                "failureThreshold": 1,
+                "periodSeconds": 240,
+                "tcpSocket": {
+                  "port": 8080
+                },
+                "timeoutSeconds": 240
+              }
+            }
+          ],
+          "serviceAccountName": "113972856916-compute@developer.gserviceaccount.com",
+          "timeoutSeconds": 300
+        },
+        "status": {
+          "conditions": [
+            {
+              "lastTransitionTime": "2026-09-03T02:11:54.110825Z",
+              "message": "Deploying revision succeeded in 1m0.7s.",
+              "status": "True",
+              "type": "Ready"
+            },
+            {
+              "lastTransitionTime": "2026-09-03T02:11:54.046279Z",
+              "message": "Containers became healthy in 34.08s.",
+              "status": "True",
+              "type": "ContainerHealthy"
+            },
+            {
+              "lastTransitionTime": "2026-09-03T02:11:02.230844Z",
+              "message": "Container image import completed in 8s.",
+              "status": "True",
+              "type": "ContainerReady"
+            },
+            {
+              "lastTransitionTime": "2026-09-03T02:11:19.595312Z",
+              "message": "Provisioning imported containers completed in 17.36s. Checking container health. This will wait for up to 4m for the configured startup probe, including an initial delay of 0s.",
+              "status": "True",
+              "type": "ResourcesAvailable"
+            }
+          ],
+          "containerStatuses": [
+            {
+              "imageDigest": "gcr.io/anastas001-sandbox-943746/careroute-agent@sha256:48c743d5adb665a5ec5482c3aaa29c82ae41644842a96accc74d99eba438fafb",
+              "name": "careroute-agent-1"
+            }
+          ],
+          "imageDigest": "gcr.io/anastas001-sandbox-943746/careroute-agent@sha256:48c743d5adb665a5ec5482c3aaa29c82ae41644842a96accc74d99eba438fafb",
+          "logUrl": "https://console.cloud.google.com/logs/viewer?project=anastas001-sandbox-943746&resource=cloud_run_revision/service_name/careroute-agent/revision_name/careroute-agent-00005-hvn&advancedFilter=resource.type%3D%22cloud_run_revision%22%0Aresource.labels.service_name%3D%22careroute-agent%22%0Aresource.labels.revision_name%3D%22careroute-agent-00005-hvn%22",
+          "observedGeneration": 1
+        }
+      },
+      "serviceName": "run.googleapis.com",
+      "status": {
+        "message": "Ready condition status changed to True for Revision careroute-agent-00005-hvn with message: Deploying revision succeeded in 1m0.7s."
+      }
+    },
+    "receiveTimestamp": "2026-09-03T02:11:55.135597167Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-09-03T02:11:54.123751Z"
+  },
+  {
+    "insertId": "6a98d76a00008bc610970a3e",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fvarlog%2Fsystem",
+    "receiveTimestamp": "2026-09-03T02:11:54.044229833Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "textPayload": "Default STARTUP TCP probe succeeded after 1 attempt for container \"careroute-agent-1\" on port 8080.",
+    "timestamp": "2026-09-03T02:11:54.035782Z"
+  },
+  {
+    "insertId": "6a98d76a0000899bcc8dbc78",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:11:54.372221161Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)",
+    "timestamp": "2026-09-03T02:11:54.035227Z"
+  },
+  {
+    "insertId": "6a98d76a000088038dea2fc0",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:11:54.372221161Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Application startup complete.",
+    "timestamp": "2026-09-03T02:11:54.034819Z"
+  },
+  {
+    "insertId": "6a98d76a000087354cf19e30",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:11:54.041616451Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Waiting for application startup.",
+    "timestamp": "2026-09-03T02:11:54.034613Z"
+  },
+  {
+    "insertId": "6a98d76a0000871c74cd469b",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2026-09-03T02:11:54.041616451Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "INFO:     Started server process [1]",
+    "timestamp": "2026-09-03T02:11:54.034588Z"
+  },
+  {
+    "insertId": "6a98d769000bf61786d2820a",
+    "jsonPayload": {
+      "level": "INFO",
+      "logger": "careroute",
+      "message": "Successfully seeded Clinical Knowledge Graph with 12 RxNorm DDI rules.",
+      "timestamp": "2026-09-03T02:11:53.783149+00:00"
+    },
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-09-03T02:11:54.095274075Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-09-03T02:11:53.783895Z"
+  },
+  {
+    "insertId": "6a98d769000b89ab06c194a6",
+    "jsonPayload": {
+      "level": "INFO",
+      "logger": "careroute.storage",
+      "message": "Connected to Google Cloud Firestore.",
+      "timestamp": "2026-09-03T02:11:53.754875+00:00"
+    },
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2Fstdout",
+    "receiveTimestamp": "2026-09-03T02:11:53.768281258Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "timestamp": "2026-09-03T02:11:53.756139Z"
+  },
+  {
+    "insertId": "1i5qvmmdkzv6",
+    "logName": "projects/anastas001-sandbox-943746/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "oauthInfo": {
+          "oauthClientId": "32555940559.apps.googleusercontent.com"
+        },
+        "principalEmail": "anastasds@google.com",
+        "principalSubject": "user:anastasds@google.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.get",
+          "permissionType": "ADMIN_READ",
+          "resource": "namespaces/anastas001-sandbox-943746/services/careroute-agent",
+          "resourceAttributes": {}
+        }
+      ],
+      "methodName": "google.cloud.run.v1.Services.GetService",
+      "request": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.GetServiceRequest",
+        "name": "namespaces/anastas001-sandbox-943746/services/careroute-agent"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:4041:5889:c500:a94c:61b7:a36e:880c",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/581.0.0 agent-name/antigravity command/gcloud.run.services.describe invocation-id/d6a1943df07b4bfe8073bfdc33b5999c environment/None environment-version/None client-os/MACOSX client-os-ver/25.6.0 client-pltf-arch/arm interactive/False from-script/False python/3.14.7 term/  (Macintosh; Intel Mac OS X 25.6.0),gzip(gfe)",
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2026-09-03T02:11:51.846394Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/anastas001-sandbox-943746/services/careroute-agent",
+      "serviceName": "run.googleapis.com",
+      "status": {}
+    },
+    "receiveTimestamp": "2026-09-03T02:11:52.420577520Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-09-03T02:11:51.791741Z"
+  },
+  {
+    "insertId": "6a98d76000088df212f56341",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:44.812347640Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "2026/09/03 02:11:44 Loading config defined in CONTAINER_WATCHER_CONFIG_PATH as /tmp/container-watcher/config.pb",
+    "timestamp": "2026-09-03T02:11:44.560626Z"
+  },
+  {
+    "insertId": "6a98d76000088de7d991e6f3",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:44.812347640Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:44.559389      70 watcher.go:651] Reloading Cloud Run config.",
+    "timestamp": "2026-09-03T02:11:44.560615Z"
+  },
+  {
+    "insertId": "6a98d75f000a07faafb0037d",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:43.814902079Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:43.656304      61 taskiterreader.go:227] EOF enumerating tasks",
+    "timestamp": "2026-09-03T02:11:43.657402Z"
+  },
+  {
+    "insertId": "6a98d75f000889b60f5f68b4",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:43.814902079Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:43.558332       1 watcher.go:699] Ready and listening",
+    "timestamp": "2026-09-03T02:11:43.559542Z"
+  },
+  {
+    "insertId": "6a98d75f00088860f422d812",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:43.814902079Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:43.558118       1 watcher.go:691] Updating Container Info...",
+    "timestamp": "2026-09-03T02:11:43.559200Z"
+  },
+  {
+    "insertId": "6a98d75f000174547c6327ca",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:43.166867055Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:43.093445      13 ktdclient.go:625] KTD Client successfully connected to KTD service",
+    "timestamp": "2026-09-03T02:11:43.095316Z"
+  },
+  {
+    "insertId": "6a98d75f00017449406d8a65",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:43.166867055Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:43.093243      13 krsieventreader.go:301] update probe enablement status (exec: true; mmap: true; exit: true; fork: true)",
+    "timestamp": "2026-09-03T02:11:43.095305Z"
+  },
+  {
+    "insertId": "6a98d75e00073e05e90cfafb",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:42.481160204Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:42.473613       1 watcherconfigurer.go:111] KRSI is enabled on X86_64.",
+    "timestamp": "2026-09-03T02:11:42.474629Z"
+  },
+  {
+    "insertId": "1sdhvtndch7d",
+    "logName": "projects/anastas001-sandbox-943746/logs/cloudaudit.googleapis.com%2Fdata_access",
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "oauthInfo": {
+          "oauthClientId": "32555940559.apps.googleusercontent.com"
+        },
+        "principalEmail": "anastasds@google.com",
+        "principalSubject": "user:anastasds@google.com"
+      },
+      "authorizationInfo": [
+        {
+          "granted": true,
+          "permission": "run.services.get",
+          "permissionType": "ADMIN_READ",
+          "resource": "namespaces/anastas001-sandbox-943746/services/careroute-agent",
+          "resourceAttributes": {}
+        }
+      ],
+      "methodName": "google.cloud.run.v1.Services.GetService",
+      "request": {
+        "@type": "type.googleapis.com/google.cloud.run.v1.GetServiceRequest",
+        "name": "namespaces/anastas001-sandbox-943746/services/careroute-agent"
+      },
+      "requestMetadata": {
+        "callerIp": "2600:4041:5889:c500:a94c:61b7:a36e:880c",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/581.0.0 agent-name/antigravity command/gcloud.run.services.describe invocation-id/6974b4e5360b4b619013bdbe5d1fe91b environment/None environment-version/None client-os/MACOSX client-os-ver/25.6.0 client-pltf-arch/arm interactive/False from-script/False python/3.14.7 term/  (Macintosh; Intel Mac OS X 25.6.0),gzip(gfe)",
+        "destinationAttributes": {},
+        "requestAttributes": {
+          "auth": {},
+          "time": "2026-09-03T02:11:38.599696Z"
+        }
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "resourceName": "namespaces/anastas001-sandbox-943746/services/careroute-agent",
+      "serviceName": "run.googleapis.com",
+      "status": {}
+    },
+    "receiveTimestamp": "2026-09-03T02:11:38.843807865Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "timestamp": "2026-09-03T02:11:38.538286Z"
+  },
+  {
+    "insertId": "6a98d74900042cc3ed08f8e6",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:21.398780035Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:21.271990       1 watcherconfigurer.go:29] Loading KRSI",
+    "timestamp": "2026-09-03T02:11:21.273603Z"
+  },
+  {
+    "insertId": "6a98d74900042cbca25fab80",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:21.398780035Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:21.271971       1 watcherconfigurer.go:98] KRSI is enabled",
+    "timestamp": "2026-09-03T02:11:21.273596Z"
+  },
+  {
+    "insertId": "6a98d74900042a4b773b7966",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:21.398780035Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:21.271815       1 watcher.go:285] Using ktd token path from CONTAINER_WATCHER_TOKEN_PATH: /tmp/container-watcher/secrets/token",
+    "timestamp": "2026-09-03T02:11:21.272971Z"
+  },
+  {
+    "insertId": "6a98d74900042a3fec35b838",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:21.398780035Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:21.271747       1 watcher.go:280] Using ktd ready file path from CONTAINER_WATCHER_READY_FILE_PATH: /tmp/container-watcher/ready",
+    "timestamp": "2026-09-03T02:11:21.272959Z"
+  },
+  {
+    "insertId": "6a98d7490003ef39c2838f90",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:21.398780035Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:21.256860       1 watcher.go:391] Initializing ktdclient with target endpoint: us-central1-containerthreatdetection.googleapis.com:443",
+    "timestamp": "2026-09-03T02:11:21.257849Z"
+  },
+  {
+    "insertId": "6a98d7490002b7b5b8920d70",
+    "labels": {
+      "instanceId": "00a41e8c1d64ead3defc2f4c59db0f92843d187b0d81a7479da85979d0358597a22bc981b931e7bda5ce2f97accf98566dfb30191c077f094aad96606015b73ca958954f96f4d750bc873ff893ef"
+    },
+    "logName": "projects/anastas001-sandbox-943746/logs/run.googleapis.com%2F%2Fvar%2Flog%2Fwatcher_log",
+    "receiveTimestamp": "2026-09-03T02:11:21.398780035Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "careroute-agent",
+        "location": "us-central1",
+        "project_id": "anastas001-sandbox-943746",
+        "revision_name": "careroute-agent-00005-hvn",
+        "service_name": "careroute-agent"
+      },
+      "type": "cloud_run_revision"
+    },
+    "textPayload": "I0903 02:11:21.164211       1 watcher.go:340] Initializing dependencies for run_environment gcp_cloud_run",
+    "timestamp": "2026-09-03T02:11:21.178101Z"
+  }
+]
