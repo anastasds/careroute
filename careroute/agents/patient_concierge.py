@@ -14,7 +14,17 @@ from careroute.memory.personalization import personalization_memory
 
 
 def get_patient_profile(patient_id: str) -> str:
-    """Retrieve the behavioral profile of the patient."""
+    """Retrieves the longitudinal behavioral personalization profile for a given patient.
+
+    Fetches patient-specific adherence traits, cognitive memory habits (e.g., forgetfulness),
+    daily routine anchors (breakfast and dinner times), and environmental cues for plan synthesis.
+
+    Args:
+        patient_id: Unique patient tracking identifier (e.g., 'PT-94821').
+
+    Returns:
+        str: JSON-serialized PatientPersonalizationProfile containing health literacy targets and daily habits.
+    """
     return personalization_memory.get_profile(patient_id).model_dump_json()
 
 

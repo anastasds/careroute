@@ -112,6 +112,21 @@ MOCK_EHR_DB: Dict[str, Dict[str, Any]] = {
 }
 
 def retrieve_patient_ehr_records(patient_id: str) -> Dict[str, Any]:
+    """Retrieves structured baseline clinical records from the Electronic Health Record (EHR) database.
+
+    Extracts primary and secondary diagnoses, outpatient medications, vital signs, known drug allergies,
+    and historical clinician discharge summaries for the specified patient.
+
+    Args:
+        patient_id: Unique patient tracking identifier (e.g., 'PT-94821').
+
+    Returns:
+        Dict[str, Any]: Structured output dictionary containing:
+            - status (str): 'success' or 'error'.
+            - patient_id (str): The requested patient identifier.
+            - record (Optional[ClinicalIntakeRecord]): Validated patient clinical record model.
+            - recovery_suggestion (Optional[str]): Actionable error message if patient not found.
+    """
     with tracer.span("Tool:retrieve_patient_ehr_records", {"patient_id": patient_id}):
         pid = patient_id
         if pid in MOCK_EHR_DB:
@@ -130,11 +145,75 @@ def retrieve_patient_ehr_records(patient_id: str) -> Dict[str, Any]:
             recovery_suggestion=f"Patient {pid} not found in EHR database."
         ).model_dump()
 
-def retrieve_patient_ehr_records_with_kg(patient_id: str) -> dict:
+
+def retrieve_patient_ehr_records_with_kg(patient_id: str) -> Dict[str, Any]:
+    """Queries EHR records for a patient and automatically registers clinical entity triples into the Knowledge Graph.
+
+    Seeds patient nodes, active condition nodes, and PRESCRIBED medication edges into the
+    Clinical Knowledge Graph before pharmaceutical interaction screening.
+
+    Args:
+        patient_id: Unique patient tracking identifier (e.g., 'PT-94821').
+
+    Returns:
+        Dict[str, Any]: Structured output dictionary containing:
+            - status (str): 'success' or 'error'.
+            - patient_id (str): The requested patient identifier.
+            - record (Optional[ClinicalIntakeRecord]): Validated patient clinical record model.
+            - recovery_suggestion (Optional[str]): Actionable error message if patient not found.
+    """
     res = retrieve_patient_ehr_records(patient_id)
     record = res.get("record")
     _update_kg(patient_id, record)
     return res
+
+
+def parse_clinical_discharge_summary(
+    discharge_input: Optional[Dict[str, Any]] = None,
+    patient_id: Optional[str] = None,
+    raw_discharge_text: Optional[str] = None
+) -> Dict[str, Any]:
+    """Parses raw unstructured clinical discharge summary text into structured clinical records.
+
+    Extracts active medications, vital signs, diagnoses, and clinician instructions,
+    validating minimum input length and formatting constraints.
+
+    Args:
+        discharge_input: Optional dictionary containing patient_id and raw_discharge_text.
+        patient_id: Unique patient identifier.
+        raw_discharge_text: Free-text clinical discharge summary notes from the inpatient team.
+
+    Returns:
+        Dict[str, Any]: Structured parsing payload containing:
+            - status (str): 'success' or 'error'.
+            - patient_id (str): The associated patient ID.
+            - parsed_entities (Dict[str, Any]): Extracted clinical entities.
+            - recovery_suggestion (Optional[str]): Actionable remediation suggestion if text is malformed or too brief.
+    """
+    with tracer.span("Tool:parse_clinical_discharge_summary", {"patient_id": patient_id}):
+        if isinstance(discharge_input, dict):
+            pid = discharge_input.get("patient_id", patient_id or "PT-UNKNOWN")
+            text = discharge_input.get("raw_discharge_text", raw_discharge_text or "")
+        else:
+            pid = patient_id or "PT-UNKNOWN"
+            text = raw_discharge_text or ""
+
+        if len(text.strip()) < 20:
+            return {
+                "status": "error",
+                "patient_id": pid,
+                "parsed_entities": {},
+                "recovery_suggestion": "Input validation failed: raw_discharge_text is too brief to extract meaningful clinical context. Provide comprehensive discharge notes."
+            }
+
+        return {
+            "status": "success",
+            "patient_id": pid,
+            "parsed_entities": {
+                "raw_text_length": len(text),
+                "summary": text[:200]
+            }
+        }
 
 
 

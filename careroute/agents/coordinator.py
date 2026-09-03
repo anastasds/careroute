@@ -61,7 +61,37 @@ def _persist_approval(record: ClinicianApprovalRequest) -> None:
         pass
 
 
-def request_clinician_approval(patient_id: str, action_type: str, justification: str, proposed_changes: Dict[str, Any], auto_approve_simulation: bool = False) -> Dict[str, Any]:
+def request_clinician_approval(
+    patient_id: str,
+    action_type: str,
+    justification: str,
+    proposed_changes: Dict[str, Any],
+    auto_approve_simulation: bool = False
+) -> Dict[str, Any]:
+    """Halts execution and submits a critical clinical modification for human clinician authorization.
+
+    Enforces mandatory Human-in-the-Loop (HITL) safety governance before any high-stakes prescription
+    discontinuation, drug substitution, or major care plan modification is finalized.
+
+    Args:
+        patient_id: Unique patient identifier for clinical correlation.
+        action_type: Clinical category of proposed modification (e.g., 'Medication Substitution', 'Discontinuation').
+        justification: Evidence-based clinical rationale explaining why the action is required (e.g. severe bleeding risk).
+        proposed_changes: Structured details of medications being removed, added, or substituted.
+        auto_approve_simulation: If True, simulates digital approval by an attending physician for automated integration runs.
+
+    Returns:
+        Dict[str, Any]: Structured approval receipt containing:
+            - status (str): 'APPROVED' or 'PENDING_APPROVAL'.
+            - approval_id (str): Unique audit tracking identifier for the approval record.
+            - patient_id (str): Associated patient ID.
+            - action_type (str): Category of clinical action submitted.
+            - requires_human_confirmation (bool): True if clinician sign-off is mandatory.
+            - is_approved (bool): Current authorization state.
+            - approved_by (Optional[str]): Clinician signature/name if authorized.
+            - clinical_audit_note (str): Audit log entry documenting approval status.
+            - recovery_suggestion (Optional[str]): Follow-up guidance if awaiting clinician review.
+    """
     with tracer.span("Tool:request_clinician_approval", {"patient_id": patient_id}):
         approval_id = f"HITL-{uuid.uuid4().hex[:8].upper()}"
         if auto_approve_simulation:
@@ -120,7 +150,31 @@ def request_clinician_approval(patient_id: str, action_type: str, justification:
             recovery_suggestion="Present approval request summary to the attending clinician for digital sign-off."
         ).model_dump()
 
-def escalate_critical_triage_alert(patient_id: str, urgency_tier: str, alert_summary: str, vital_signs_summary: Optional[str] = None) -> Dict[str, Any]:
+def escalate_critical_triage_alert(
+    patient_id: str,
+    urgency_tier: str,
+    alert_summary: str,
+    vital_signs_summary: Optional[str] = None
+) -> Dict[str, Any]:
+    """Dispatches emergency clinical alerts to rapid response teams and attending physicians.
+
+    Initiates urgent hospital triage alerts when severe hemodynamic instability, hypertensive crisis,
+    or acute red-flag symptoms require immediate clinical intervention.
+
+    Args:
+        patient_id: Unique patient identifier.
+        urgency_tier: Urgency classification (e.g., 'EMERGENCY_911', 'URGENT_EVALUATION').
+        alert_summary: Concise clinical summary of the life-threatening condition or symptom.
+        vital_signs_summary: Optional text summary of current vital signs driving the escalation.
+
+    Returns:
+        Dict[str, Any]: Dispatch record containing:
+            - status (str): 'success' or 'error'.
+            - dispatch_id (str): Unique tracking identifier for the emergency dispatch.
+            - patient_id (str): Patient associated with the alert.
+            - recipient_team (str): The clinical response unit notified.
+            - notification_dispatched (bool): Confirmation of alert transmission.
+    """
     with tracer.span("Tool:escalate_critical_triage_alert", {"patient_id": patient_id}):
         dispatch_id = f"DISPATCH-{uuid.uuid4().hex[:6].upper()}"
         recipient = "Hospital Rapid Response Team & On-Call Attending" if "911" in urgency_tier else "Care Transition Triage Nurse"
@@ -158,8 +212,66 @@ class AppointmentScheduleOutput(BaseModel):
     instructions_for_patient: str = Field(...)
     recovery_suggestion: Optional[str] = None
 
-def evaluate_vital_signs_urgency(systolic_bp: Optional[int] = None, diastolic_bp: Optional[int] = None, heart_rate: Optional[int] = None, respiratory_rate: Optional[int] = None, oxygen_saturation: Optional[float] = None, temperature_fahrenheit: Optional[float] = None, patient_id: Optional[str] = None) -> Dict[str, Any]:
+def evaluate_vital_signs_urgency(
+    systolic_bp: Optional[int] = None,
+    diastolic_bp: Optional[int] = None,
+    heart_rate: Optional[int] = None,
+    respiratory_rate: Optional[int] = None,
+    oxygen_saturation: Optional[float] = None,
+    temperature_fahrenheit: Optional[float] = None,
+    patient_id: Optional[str] = None,
+    vitals: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
+    """Evaluates physiological vital signs against established clinical triage protocols.
+
+    Assesses blood pressure, heart rate, oxygenation, and respiratory rate to identify
+    hypertensive crises, severe hypoxemia, or hemodynamic instability requiring emergency triage.
+
+    Args:
+        systolic_bp: Systolic blood pressure in mmHg.
+        diastolic_bp: Diastolic blood pressure in mmHg.
+        heart_rate: Beats per minute (bpm).
+        respiratory_rate: Breaths per minute.
+        oxygen_saturation: Blood oxygen percentage (SpO2, 0.0 - 100.0).
+        temperature_fahrenheit: Core body temperature in degrees Fahrenheit.
+        patient_id: Optional patient tracking ID.
+        vitals: Optional nested dictionary of vital sign metrics for flexible tool invocation.
+
+    Returns:
+        Dict[str, Any]: Triage assessment dictionary containing:
+            - status (str): 'success' or 'error'.
+            - urgency_tier (TriageUrgency): STABLE, URGENT_EVALUATION, or EMERGENCY_911.
+            - clinical_flags (List[str]): Identified physiological abnormalities.
+            - recommended_clinical_action (str): Immediate clinical management protocol.
+            - recovery_suggestion (Optional[str]): Remediation instructions if input parameters are invalid.
+    """
     with tracer.span("Tool:evaluate_vital_signs_urgency", {"patient_id": patient_id}):
+        # Handle dict being passed as the first positional argument
+        if isinstance(systolic_bp, dict):
+            inner = systolic_bp.get("vitals", systolic_bp)
+            systolic_bp = inner.get("systolic_bp")
+            diastolic_bp = inner.get("diastolic_bp")
+            heart_rate = inner.get("heart_rate")
+            respiratory_rate = inner.get("respiratory_rate")
+            oxygen_saturation = inner.get("oxygen_saturation")
+            temperature_fahrenheit = inner.get("temperature_fahrenheit")
+        elif isinstance(vitals, dict):
+            systolic_bp = vitals.get("systolic_bp", systolic_bp)
+            diastolic_bp = vitals.get("diastolic_bp", diastolic_bp)
+            heart_rate = vitals.get("heart_rate", heart_rate)
+            respiratory_rate = vitals.get("respiratory_rate", respiratory_rate)
+            oxygen_saturation = vitals.get("oxygen_saturation", oxygen_saturation)
+            temperature_fahrenheit = vitals.get("temperature_fahrenheit", temperature_fahrenheit)
+
+        # Input boundary validation
+        if systolic_bp is not None and (systolic_bp < 40 or systolic_bp > 300):
+            return {
+                "status": "error",
+                "urgency_tier": "URGENT_EVALUATION",
+                "clinical_flags": ["Invalid physiological value"],
+                "recommended_clinical_action": "Repeat vitals measurement manually.",
+                "recovery_suggestion": f"Input validation failed: Systolic BP {systolic_bp} mmHg is outside plausible physiological range (40-300 mmHg)."
+            }
         import json
         
         prompt = f"""
@@ -201,7 +313,32 @@ Always return a 'status' of 'success'.
                 recommended_clinical_action="Fallback: Urgent clinician review needed."
             ).model_dump()
 
-def schedule_followup_appointment(patient_id: str, specialty: str, timeframe_days: int, appointment_reason: str) -> Dict[str, Any]:
+def schedule_followup_appointment(
+    patient_id: str,
+    specialty: str,
+    timeframe_days: int,
+    appointment_reason: str
+) -> Dict[str, Any]:
+    """Schedules an outpatient specialist follow-up visit and formats patient instructions.
+
+    Coordinates post-discharge outpatient continuity of care, generating a tracking confirmation ID,
+    target post-discharge appointment window, and preparation instructions for the patient.
+
+    Args:
+        patient_id: Unique patient identifier.
+        specialty: Clinical department or medical specialty (e.g., 'Cardiology', 'Primary Care').
+        timeframe_days: Recommended follow-up window in days from discharge (e.g., 7 or 14).
+        appointment_reason: Specific clinical objective of the visit (e.g., 'Monitor INR and heart failure recovery').
+
+    Returns:
+        Dict[str, Any]: Appointment booking payload containing:
+            - status (str): 'success' or 'error'.
+            - confirmation_id (str): Unique appointment reference ID.
+            - patient_id (str): Associated patient identifier.
+            - specialty (str): Medical specialty booked.
+            - scheduled_date (str): Relative post-discharge appointment date string.
+            - instructions_for_patient (str): Clear, patient-facing visit preparation guidelines.
+    """
     with tracer.span("Tool:schedule_followup_appointment", {"patient_id": patient_id}):
         conf_id = f"APPT-{patient_id[-4:] if len(patient_id) >= 4 else '0000'}-{timeframe_days}D"
         target_date = f"+{timeframe_days} Days post-discharge"
@@ -218,7 +355,30 @@ def schedule_followup_appointment(patient_id: str, specialty: str, timeframe_day
         ).model_dump()
 
 
-def submit_intake_result(status: str, patient_id: str, care_plan: Optional[Dict[str, Any]] = None, hitl_approval: Optional[Dict[str, Any]] = None, contraindications: Optional[List[Any]] = None, message: Optional[str] = None) -> Dict[str, Any]:
+def submit_intake_result(
+    status: str,
+    patient_id: str,
+    care_plan: Optional[Dict[str, Any]] = None,
+    hitl_approval: Optional[Dict[str, Any]] = None,
+    contraindications: Optional[List[Any]] = None,
+    message: Optional[str] = None
+) -> Dict[str, Any]:
+    """Submits the final validated clinical intake record and care plan to the host system.
+
+    Constructs a strongly-typed Pydantic result capturing transition status, personalized care plan,
+    clinician authorization audits, contraindication resolutions, and patient communication guides.
+
+    Args:
+        status: Final transition workflow status (e.g., 'completed', 'pending_clinician_approval').
+        patient_id: Unique patient identifier.
+        care_plan: Optional structured care plan dictionary including diagnoses, schedules, and appointments.
+        hitl_approval: Optional Human-in-the-Loop clinician approval audit receipt.
+        contraindications: Optional list of identified drug interaction results and mitigations.
+        message: Optional patient-facing summary message.
+
+    Returns:
+        Dict[str, Any]: Validated IntakeResult model dictionary for external system ingestion.
+    """
     if care_plan and isinstance(care_plan, dict) and "patient_id" not in care_plan:
         care_plan["patient_id"] = patient_id
     clean_contraindications = []
