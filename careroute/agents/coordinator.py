@@ -309,13 +309,18 @@ async def process_patient_intake(session_id: str, patient_id: str, user_message:
             "message": emergency_msg
         }
 
+    # 3. HIPAA / Privacy Layer: PII & PHI Scrubbing (Cloud DLP / Regex Filter)
+    from careroute.security.redaction import PIIScrubber
+    clean_user_message = PIIScrubber.redact(user_message)
+    clean_discharge_text = PIIScrubber.redact(raw_discharge_text) if raw_discharge_text else None
+
     from google.adk import Runner
     import json
     
     # We pass the input context so the LLM coordinator knows what to do
-    prompt = f"Patient ID: {patient_id}\nUser Message: {user_message}\nAuto-approve HITL: {auto_approve_hitl}"
+    prompt = f"Patient ID: {patient_id}\nUser Message: {clean_user_message}\nAuto-approve HITL: {auto_approve_hitl}"
     if raw_discharge_text:
-        prompt += f"\nRaw Discharge Text: {raw_discharge_text}"
+        prompt += f"\nRaw Discharge Text: {clean_discharge_text}"
         
     from careroute.core.adk_config import adk_session_service, adk_telemetry_config, adk_memory_service
     from google.adk.runners import RunConfig

@@ -22,7 +22,8 @@ from careroute.core.router import router, StrategicModelRouter, TaskComplexity
 from careroute.core.guardrails import (
     EmergencyTriageGuardrail,
     PromptInjectionGuardrail,
-    )
+)
+from careroute.security.redaction import PIIScrubber, redact_phi
 
 __all__ = [
     "SYSTEM_CONSTITUTION",

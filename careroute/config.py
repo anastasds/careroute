@@ -24,6 +24,7 @@ class CareRouteConfig:
         self.flash_model_name: str = os.getenv("CAREROUTE_FLASH_MODEL", "gemini-2.5-flash")
         self.otel_service_name: str = os.getenv("OTEL_SERVICE_NAME", "careroute-agent")
         self.log_level: str = os.getenv("LOG_LEVEL", "INFO")
+        self.enable_dlp: bool = os.getenv("CAREROUTE_ENABLE_DLP", "false").lower() in ("true", "1", "yes")
         self._api_key: Optional[str] = None
 
     @property

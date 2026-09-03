@@ -16,12 +16,18 @@ class StructuredJSONFormatter(logging.Formatter):
     """Formats log records as structured JSON entries."""
 
     def format(self, record: logging.LogRecord) -> str:
+        raw_message = record.getMessage()
+        try:
+            from careroute.security.redaction import PIIScrubber
+            scrubbed_message = PIIScrubber.redact(raw_message)
+        except Exception:
+            scrubbed_message = raw_message
+
         log_entry: Dict[str, Any] = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "level": record.levelname,
             "logger": record.name,
-            "message": record.getMessage(),
-
+            "message": scrubbed_message,
         }
 
         # Include custom fields passed in extra

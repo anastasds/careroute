@@ -289,6 +289,12 @@ CareRoute runs input text through deterministic and LLM-assisted filters before 
 * **`PromptInjectionGuardrail`**: Evaluates incoming patient or caregiver prompts against heuristic and semantic injection patterns. Intercepts jailbreaks, prompt extraction, and instructions to override clinician authority.
 * **`EmergencyTriageGuardrail`**: Detects life-threatening symptoms (crushing chest pain, severe hypoxemia, blue lips) and routes immediately to emergency protocols (911 redirect) rather than conversational care scheduling.
 
+### 6. HIPAA-Aware PII / PHI Redaction Engine (Cloud DLP & Regex)
+CareRoute safeguards patient privacy through a dual-mode redaction engine (`careroute/security/redaction.py`):
+* **Google Cloud Sensitive Data Protection (DLP)**: When `CAREROUTE_ENABLE_DLP=true` and credentials are present, CareRoute calls the Cloud DLP API (`deidentify_content`) using standard healthcare info types (`US_SOCIAL_SECURITY_NUMBER`, `EMAIL_ADDRESS`, `PHONE_NUMBER`, `DATE_OF_BIRTH`, `US_HEALTHCARE_NPI`, `MEDICAL_RECORD_NUMBER`, `STREET_ADDRESS`).
+* **High-Performance Deterministic Regex Filter**: Runs locally with zero latency, scrubbing direct identifiers (SSNs, MRNs, phone numbers, email addresses, dates of birth, ZIP codes) while carefully preserving clinical terminology and valid session identifiers (e.g., `PT-94821`).
+* **Automatic Logging Scrubbing**: All structured JSON log messages and audit entries pass through `PIIScrubber.redact()` before being emitted to stdout or Cloud Logging, preventing accidental leakages of protected health information in log aggregators.
+
 
 ---
 
